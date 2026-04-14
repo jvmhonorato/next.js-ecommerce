@@ -13,7 +13,7 @@ type CustomAppProps = AppProps & {
 
 const App = ({ Component, pageProps: {session, ...pageProps} }: CustomAppProps) => {
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class" defaultTheme="light">
   <SessionProvider session={session}>
     <StoreProvider>
       <PayPalScriptProvider options={SCRIPT_PROVIDER_OPTIONS} deferLoading={true}>
