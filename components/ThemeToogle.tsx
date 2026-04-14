@@ -4,40 +4,40 @@ import { useTheme } from 'next-themes'
 import { BsSunFill } from 'react-icons/bs';
 
 const ThemeToogle = () => {
-  const [darkMode, setDarkMode] = useState(true);
-  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
-    const theme = localStorage.getItem('theme');
-    if (theme == 'dark') setDarkMode(true);
+    setMounted(true);
   }, []);
 
-   // Função para alternar entre os temas
-   const toggleTheme = () => {
-    // Inverte o tema atual
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    setDarkMode(!darkMode)
+  const isDark = resolvedTheme === 'dark';
+
+  const toggleTheme = () => {
+    setTheme(isDark ? 'light' : 'dark');
   };
 
+  if (!mounted) {
+    return (
+      <div className="h-8 w-16 rounded-full border border-slate-300 bg-slate-200" />
+    );
+  }
+
   return (
-    <>
-      <div
-        className="relative  w-14 h-6 flex items-center  bg-[#3a37c5] cursor-pointer rounded-full p-1"
-        onClick={() => toggleTheme()}
-      >
-        <FaMoon className="text-white" size={18} />
-        <div
-          className="absolute bg-white dark:bg-medium w-5 h-5 rounded-full shadow-md transform transition-transform duration-300"
-          style={darkMode ? { left: '2px' } : { right: '2px' }}
-        ></div>
-        <BsSunFill
-        className='ml-auto text-yellow-400'
-        size={18}
-        />
-      </div>
-      
-    </>
+    <button
+      type="button"
+      aria-label="Alternar tema"
+      onClick={toggleTheme}
+      className="relative flex h-8 w-16 items-center rounded-full border border-slate-300 bg-slate-200 px-1 transition dark:border-slate-600 dark:bg-slate-700"
+    >
+      <FaMoon className="text-slate-700 dark:text-slate-200" size={14} />
+      <BsSunFill className="ml-auto text-amber-500" size={14} />
+      <span
+        className={`absolute h-6 w-6 rounded-full bg-white shadow-sm transition-transform duration-300 dark:bg-slate-900 ${
+          isDark ? 'translate-x-0' : 'translate-x-8'
+        }`}
+      />
+    </button>
   );
 };
 
