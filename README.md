@@ -10,7 +10,7 @@
 
 
 # Next.js E-commerce Model 
-![ecommerce-outfit](https://github.com/user-attachments/assets/fef7e6b8-1dd5-40f0-bf96-e8ae0f5bc8e3)
+
 
 
 
