@@ -79,25 +79,14 @@ The Next.js E-commerce Model with is a fully functional e-commerce application m
 
 
 ## Services Used
+| Frontend       | Backend        | Tools & Services |
+|----------------|---------------|------------------|
+| Next.js        | Node.js       | Vercel           |
+| React          | MongoDB       | GitHub           |
+| TypeScript     | Mongoose      | Cloudinary       |
+| TailwindCSS    | NextAuth      | PayPal           |
+| Formik + Yup   | API Routes    |                  |
 
-* Github
-* Vercel
-* Mongo DB Atlas
-* PayPal
-* Cloudinary
-
-## Getting started
-
-* Dependency
-  - Formik
-  - JS-cookie
-  - Typescript
-  - Toastfy
-  - React-icons
-  - YUP
-  - Mongoose
-  - Next-auth
-  - Axios
   
 * To install the dependencies.
 ```bash
