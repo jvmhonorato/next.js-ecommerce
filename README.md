@@ -30,7 +30,7 @@ The Next.js E-commerce Model with is a fully functional e-commerce application m
 
 ## Features
 
-## 📦 Overview
+##  Overview
 
 This project is a fully functional **E-commerce application model** built with modern technologies like **Next.js, TypeScript, MongoDB and NextAuth**.
 
@@ -38,7 +38,7 @@ It provides a solid foundation for developers who want to quickly build scalable
 
 ---
 
-## ✨ Features
+##  Features
 
 ###  Product Catalog
 - Browse products with detailed pages
@@ -150,7 +150,7 @@ The Next.js E-commerce Model with Formik offers a comprehensive and scalable sol
   - Deploy on Vercel: Soon 
   - Repository: https://github.com/jvmhonorato/outfit-store
   - In case of sensitive bugs like security vulnerabilities, please contact
-    vituhonorato.89@gmail.com directly instead of using issue tracker. We value your effort
+    honorato.ofc@gmail.com directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
 
   ## Versioning
