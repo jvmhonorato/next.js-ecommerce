@@ -160,7 +160,7 @@ The Next.js E-commerce Model with Formik offers a comprehensive and scalable sol
 
   ## Authors
 
-  * **@victormahon** 
+  * **@jvmhonorato** 
 
   Please follow github and join us!
   Thanks to visiting me and good coding!
